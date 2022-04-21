@@ -1,0 +1,87 @@
+
+.frames { 
+    margin:0px auto;
+    padding:0px;
+    position:relative;
+    display: inline-block;
+}
+
+.frames iframe { 
+    position: absolute;
+    user-select: none;
+}
+
+.livly { 
+    margin:0px auto;
+    padding:0px;
+    position: absolute;
+
+    display: inline-block;
+}
+
+/* キャラクターの大きさパラメータ */
+.midium1{
+    width:160px;
+    height:150px; /* フレームの大きさ */
+}
+/*持ち手*/
+.frames .grip{
+    position: absolute;
+    left:0px; top:0px; /* 紫の枠の位置調整。青い枠の左上基点 */
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10かららしい */
+
+}
+/* 非表示 */
+.none{
+    display: none;
+}
+/* カーソルホバー表示用 */
+.hover_touch{
+    cursor: grab;
+}
+.hover_grip{
+    cursor: grabbing;
+}
+.hover_waddle{
+    cursor: pointer;
+}
+/* キャラクター描画順変更用 */
+.render_front{
+    z-index:100;
+}
+.render_back{
+    z-index:80;
+}
+
+/*■左右反転*/
+.svg-right{
+    transform: scale(-1,1);
+}
+    
+.svg-left{
+    transform: scale(1,1);
+}
+
+.island {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../imgs/island.png");
+}
+
+
+/*　画面サイズ 500pxから999pxまで適用　*/
+.container_size {
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+}
+
+.container_main {
+
+    width: 400px;
+    height: 400px;
+}
